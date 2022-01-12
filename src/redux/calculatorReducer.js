@@ -72,6 +72,7 @@ export function calculatorReducer(state, { type, payload }) {
           ...state,
           overwrite: false,
           currentOperand: null,
+          previousOperand: null,
         };
       }
       if (state.currentOperand == null) return state;
